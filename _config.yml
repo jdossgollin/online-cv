@@ -43,6 +43,5 @@ scholar:
   join_strings:    true
   details_dir:    bibliography
   query: "@*"
-  sort_by: year,author
-  order: descending,descending
-  bibtex_skip_fields: [url, doi]
+  sort_by: date
+  order: descending
