@@ -34,14 +34,8 @@ plugins:
 
 scholar:
   style: decision-sciences
-  locale: en
-  sort_by: year
   source: ./_bibliography
   bibliography: my-papers.bib
   bibliography_template: bib
-  replace_strings: true
-  join_strings:    true
-  details_dir:    bibliography
-  query: "@*"
   sort_by: date
   order: descending
