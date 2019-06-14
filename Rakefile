@@ -6,7 +6,7 @@ require "jekyll"
 require "jekyll/scholar"
 
 # Change your GitHub reponame
-GITHUB_REPONAME = "jdossgollin/open-cv"
+GITHUB_REPONAME = "jdossgollin/online-cv"
 
 
 desc "Generate blog files"
