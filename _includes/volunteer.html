@@ -1,0 +1,37 @@
+{% assign outreaches = site.data.volunteer %}
+{% if outreaches %}
+<section class="section experiences-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-handshake fa-stack-1x fa-inverse"></i>
+    </span>
+    Community Service and Outreach
+  </h2>
+
+  {% for item in outreaches %}
+  <div class="item">
+
+    <div class="meta">
+
+      <div class="upper-row">
+        <h3 class="job-title">{{ item.role }}</h3>
+        <div class="time">{{ item.time }}</div>
+      </div><!--//upper-row-->
+
+      {% if item.company %}<div class="company">{{ item.company }}, {{ item.location }}</div>{% endif %}
+
+    </div><!--//meta-->
+
+    {% if item.details %}
+    <div class="details">
+      {{ item.details | markdownify }}
+    </div><!--//details-->
+    {% endif %}
+
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}
+

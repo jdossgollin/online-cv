@@ -1,0 +1,22 @@
+- name: Python
+  level: 95%
+- name: R & RStudio
+  level: 95%
+- name: LaTeX
+  level: 90%
+- name: jekyll
+  level: 85%
+- name: bash
+  level: 80%
+- name: stan
+  level: 80%
+- name: git
+  level: 75%
+- name: Matlab
+  level: 72%
+- name: PyMC3
+  level: 70%
+- name: make
+  level: 65%
+- name: Tensorflow & Keras
+  level: 60%

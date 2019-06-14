@@ -1,0 +1,12 @@
+- name: English
+  level: 99%
+- name: Spanish
+  level: 90%
+- name: Portuguese
+  level: 80%
+- name: Italian
+  level: 45%
+- name: French
+  level: 35%
+- name: Guaraní
+  level: 15%

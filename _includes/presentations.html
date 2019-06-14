@@ -1,0 +1,30 @@
+{% assign presentations = site.data.presentations  | sort: "date" | reverse %}
+{% if presentations %}
+<section class="section experiences-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-user-friends fa-stack-1x fa-inverse"></i>
+    </span>
+    Invited Talks & Workshop Presentations
+  </h2>
+
+  {% for presentation in presentations %}
+  <div class="item">
+
+    <div class="meta">
+
+      <div class="upper-row">
+        <h3 class="job-title">{{ presentation.title }}</h3>
+        <div class="time">{{ presentation.date | date_to_string }}</div>
+      </div><!--//upper-row-->
+      <div class="company">{{ presentation.type}}, {{ presentation.event }}, {{ presentation.location }} {% if presentation.doi %}
+      &rarr; <a href="http://doi.org/{{ presentation.doi }}" target="_blank"><b>Link</b></a>{% endif %}</div>
+    
+
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}
+

@@ -1,5 +1,3 @@
-{% assign publications = site.data.data.publications %}
-{% if publications %}
 <section class="section publications-section">
 
   <h2 class="section-title">
@@ -7,22 +5,23 @@
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
     </span>
-    {{ publications.title }}
+    Publications and Presentations
   </h2>
 
-  {% if publications.intro %}
-  <div class="intro">
-    {{ publications.intro | markdownify }}
-  </div><!--//intro-->
-  {% endif %}
+  <div>
+      I have tried to post post-prints or <b>open access versions</b> whenever possible.
+      However, paywalls sometimes get in our way.
+      If you would like a copy of a paper but are not able to access it, please <a href="mailto:{{ site.data.contact.email }}">email me</a> and I'll be delighted to <b>send you a copy</b>.
+      Let's work together towards a better model of academic publishing!
+  </div>
 
-  {% for publication in publications.papers %}
-  <div class="item">
-    <div class="publication-title">{{ publication.title }}</div>
-    <div class="publication-authors">{{ publication.authors }}</div>
-    <div class="publication-conference">{{ publication.conference }}</div>
-  </div><!--//item-->
-  {% endfor %}
+  <h3 class="section-subtitle">Manuscripts in Review</h3>
+  {% bibliography  --query @unpublished --sort date %}
+
+  <h3 class="section-subtitle">Peer-Reviewed Journal Articles</h3>
+  {% bibliography  --query @article --sort date %}
+
+  <h3 class="section-subtitle">Conference Papers</h3>
+  {% bibliography  --query @inproceedings --sort date %}
 
 </section><!--//section-->
-{% endif %}
