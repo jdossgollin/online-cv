@@ -1,4 +1,4 @@
-{% assign experiences = site.data.experiences %}
+{% assign experiences = site.data.experiences | sort: "eyear" | reverse %}
 {% if experiences %}
 <section class="section experiences-section">
   <h2 class="section-title">
@@ -16,7 +16,15 @@
 
       <div class="upper-row">
         <h3 class="job-title">{{ experience.role }}</h3>
-        <div class="time">{{ experience.time }}</div>
+        <div class="time">
+          {% if experience.syear == experience.eyear %}
+            {{ experience.syear }}
+          {% elsif experience.eyear == 9999 %}
+            {{ experience.syear }} - Present
+          {% else %}
+            {{ experience.syear}} - {{ experience.eyear }}
+          {% endif %}
+        </div>
       </div><!--//upper-row-->
 
       <div class="company">{{ experience.company }}, {{ experience.location }}</div>

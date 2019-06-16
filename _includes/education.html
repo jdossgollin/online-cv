@@ -1,4 +1,4 @@
-{% assign educations = site.data.education %}
+{% assign educations = site.data.education | sort: "year" | reverse %}
 {% if educations %}
 <section class="section experiences-section">
   <h2 class="section-title">
@@ -6,7 +6,7 @@
           <i class="fas fa-circle fa-stack-2x"></i>
           <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
       </span>
-    Education
+    Academic Degrees
   </h2>
 
   {% for education in educations %}
@@ -16,7 +16,7 @@
 
       <div class="upper-row">
         <h3 class="job-title">{{ education.degree }}{% if education.department %}, {{education.department }}{% endif %}.</h3>
-        <div class="time">{{ education.time }}</div>
+        {% if education.year == 9999 %}<div class="time">Present</div>{% else %}<div class="time">{{ education.year }}</div>{% endif %}
       </div><!--//upper-row-->
 
       <div class="company">{{ education.university }}, {{ education.location }}.</div>

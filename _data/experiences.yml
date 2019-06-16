@@ -1,37 +1,43 @@
+# NOTE
+# syear and eyear must be integers
+# use 9999 in eyear column for anything ongoing
+
 - role: Graduate Research Assistant
-  time: 2015 - Present
+  syear: 2015
+  eyear: 9999
   company: Columbia Water Center
-  location: Columbia University, New York, NY, USA
+  location: Columbia University, New York, NY
 
 - role: Undergraduate Research Assistant
-  time: 2014 - 2015
+  syear: 2014
+  eyear: 2015
   company: Yale University
-  location: New Haven, CT, USA
+  location: New Haven, CT
   details: |
     - Lab of Jaehong Kim, Department of Chemical and Environmental Engineering
     - Evaluated technical and economic viability of UV-C LED technology for portable water treatment.
 
 - role: Visiting Student Researcher
-  time: 2015 - Present
-  company: Universidade Federal do Ceará
-  location: Fortaleza, Brazil
+  syear: 2014
+  eyear: 2014
+  location: Fortaleza, Ceará, Brazil
   details: |
     - Water and Climate Risks Lab, Department of Hydraulic and Environmental Engineering
     - Supervisors: Francisco de Assis de Souza Filho and Osny Enéas da Silva
     - Conducted bottom-up drought vulnerability assessment of rural drinking water systems.
 
 - role: Mechanical Design Intern
-  time: 2013
+  syear: 2013
+  eyear: 2013
   company: DEKA Research & Development
-  location: Manchester, NH, USA
+  location: Manchester, NH
   details: |
     Used CAD and 3D printing to evaluate design changes for Slingshot water purification system.
 
 - role: Summer Intern
-  time: 2014
+  syear: 2014
+  eyear: 2014
   company: Ikatú Agua Project, Fundación Paraguaya
-  location: Asunción, Brazil
+  location: Asunción, Paraguay
   details: |
     Assessed impact of credit program for water system improvement in 19 rural communities.
-
-#2013Mechanical Design Intern,DEKA Research and Development, Manchester, NH.Used CAD and 3D printing to evaluate design changes for Slingshot water purification system2012Summer Intern,Ikatú Agua Project, Fundación Paraguaya, Asunción, Paraguay.Assessed impact of credit for water system improvement in 19 rural communities

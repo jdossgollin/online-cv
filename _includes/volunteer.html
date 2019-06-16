@@ -1,4 +1,4 @@
-{% assign outreaches = site.data.volunteer %}
+{% assign outreaches = site.data.volunteer | sort: "syear" | reverse %}
 {% if outreaches %}
 <section class="section experiences-section">
   <h2 class="section-title">
@@ -16,7 +16,15 @@
 
       <div class="upper-row">
         <h3 class="job-title">{{ item.role }}</h3>
-        <div class="time">{{ item.time }}</div>
+        <div class="time">
+            {% if item.syear == item.eyear %}
+              {{ item.syear }}
+            {% elsif item.eyear == 9999 %}
+              {{ item.syear }} - Present
+            {% else %}
+              {{ item.syear}} - {{ item.eyear }}
+            {% endif %}
+          </div>
       </div><!--//upper-row-->
 
       {% if item.company %}<div class="company">{{ item.company }}, {{ item.location }}</div>{% endif %}

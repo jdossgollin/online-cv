@@ -1,7 +1,7 @@
 - degree: Ph.D. Candidate
-  time: Present
+  year: 9999
   university: Columbia University
-  location:  New York, NY, USA
+  location:  New York, NY
   department: Earth and Environmental Engineering
   details: |
       - NSF Graduate Research Fellow
@@ -9,18 +9,18 @@
       - Advisor: Upmanu Lall
 
 - degree: M.S.
-  time: 2016
+  year: 2016
   university: Columbia University
-  location:  New York, NY, USA
+  location:  New York, NY
   department: Earth and Environmental Engineering
   details: |
       - Concentration: Water Resources and Climate 
       - Advisor: Upmanu Lall
 
 - degree: B.S.
-  time: 2015
+  year: 2015
   university: Yale University
-  location:  New Haven, CT, USA
+  location:  New Haven, CT
   department: Mechanical Engineering
   details: |
       - Senior project: Adapting UVC-LEDs for Portable Water Purification
@@ -28,6 +28,6 @@
       - Distinction in Mechanical Engineering and Materials Science
 
 - degree: High School
-  time: 2011
+  year: 2011
   university: Wilbur Cross High School
-  location:  New Haven, CT, USA
+  location:  New Haven, CT

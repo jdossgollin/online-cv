@@ -1,5 +1,5 @@
 - role: Teaching Assistant, Environmental Data Analysis
-  time: Spring 2018
+  year: 2018
   location: Columbia University, New York, NY
   details: |
     - Wrote and graded problem sets for 40 masters-level students
@@ -7,7 +7,7 @@
     - "Head instructor: Upmanu Lall"
 
 - role: Guest Lecturer, Water Systems Analysis
-  time: Spring 2017
+  year: 2017
   location: Columbia University, New York, NY
   details: |
     - Gave lecture 'Using climate information for Water Systems analysis'
