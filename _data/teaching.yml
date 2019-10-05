@@ -1,10 +1,14 @@
+- role: Python and Data Science Tutor
+  year: 2019
+  location: Oliver Wyman, New York, NY
+  details: Led multiple weeklong courses to teach fundamentals of Python and data science to over 100 consultants at multinational company
+
 - role: Teaching Assistant, Environmental Data Analysis
   year: 2018
   location: Columbia University, New York, NY
   details: |
     - Wrote and graded problem sets for 40 masters-level students
-    - "Held regular office hours and gave two lectures: 'Introduction to R and RStudio', and 'Introduction to Bayesian Methods'"
-    - "Head instructor: Upmanu Lall"
+    - Held regular office hours and gave two lectures: 'Introduction to R and RStudio', and 'Introduction to Bayesian Methods'
 
 - role: Guest Lecturer, Water Systems Analysis
   year: 2017

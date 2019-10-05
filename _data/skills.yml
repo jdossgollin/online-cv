@@ -20,3 +20,5 @@
   level: 65%
 - name: Tensorflow & Keras
   level: 60%
+- name: OpenAI Gym
+  level: 55%

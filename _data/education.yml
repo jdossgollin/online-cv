@@ -12,10 +12,7 @@
   university: Columbia University
   location:  New York, NY
   department: Earth and Environmental Engineering
-  details: |
-      - Concentration in Water Resources and Climate
-      - Columbia University Presidential Fellow
-
+  details:
 - degree: B.S.
   year: 2015
   university: Yale University
@@ -25,8 +22,3 @@
       - Graduated Cum Laude
       - Distinction in Mechanical Engineering and Materials Science
       - Senior project: Adapting UVC-LEDs for Portable Water Purification
-
-- degree: High School
-  year: 2011
-  university: Wilbur Cross High School
-  location:  New Haven, CT
